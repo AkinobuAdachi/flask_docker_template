@@ -18,3 +18,10 @@ Preference>Project:プロジェクト名>Project Interpreter>歯車>add>Docker..
 Project InterpreterにRemote Python ３.◯.◯ Dockerを選択
 Run/Debug Configratonのtargetをモジュール選択に切り替えsrc.appにする
 ```
+
+### GAEにデプロイ
+```
+/src に入って
+$ gclpud init
+$ gcloud app deploy
+```
