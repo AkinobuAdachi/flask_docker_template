@@ -1,14 +1,14 @@
 from flask import Flask
 from flask import jsonify
 from flask import render_template
-from .modules import test_module
+# from .modules import test_module
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
 @app.route('/')
 def index():
-    test_module.test_func('abc')
+    # test_module.test_func('abc')
     return jsonify({
     "message": "テスト"
     })
@@ -21,8 +21,8 @@ def template(username=None):
 
 def main():
     app.debug = True
-    app.run(host='0.0.0.0', port=5500)
-    # app.run()
+    # app.run(host='0.0.0.0', port=5500)
+    app.run()
 
 if __name__ == '__main__':
     main()
